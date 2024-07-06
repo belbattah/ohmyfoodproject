@@ -1,0 +1,75 @@
+/* general */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    font-family: "Shrikhand", serif;
+    text-align: center;
+    box-shadow: 0px 1px 3px 1px grey;
+    margin: 0;
+    position: relative;
+    
+}
+
+h1{
+    margin: 0;
+}
+
+
+main .paris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    background-color: lightgray;
+    padding: 5px;
+    box-shadow: 0px 1px 3px 1px grey;
+    
+}
+
+main .paris i {
+    font-size: 20px;
+}
+
+main .paris h2{
+    font-size: 16px;
+}
+
+.explorer{
+    text-align: center;
+}
+.explorer h2{
+    
+    font-size: 24px;
+    
+}
+
+.explorer p{
+    font-size: 18px;
+    
+}
+
+.explorer button {
+    font-weight: bolder;
+    border-radius: 25px;
+    padding: 20px 30px;
+    margin-top: 25px;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 12px 4px grey;
+    background-image: linear-gradient(#FF79DA, #9356DC) ;
+    transition: 0.250ms;
+
+}
+
+.explorer button:hover{
+    transform: scale(1.04);
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+header {
+  font-family: "Shrikhand", serif;
+  text-align: center;
+  box-shadow: 0px 1px 3px 1px grey;
+}
+header h1 {
+  margin: 0;
+  height: 63px;
+  align-items: center;
+}
+
+.paris {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  gap: 17px;
+  background-color: #EAEAEA;
+  padding: 5px;
+  box-shadow: 0px 1px 3px 1px grey;
+}
+.paris i {
+  font-size: 20px;
+}
+.paris h2 {
+  font-size: 16px;
+}
+
+.explorer {
+  text-align: center;
+  background-color: #F6F6F6;
+  height: 300px;
+  padding-top: 20px;
+}
+.explorer h2 {
+  font-size: 24px;
+  margin-top: 0px;
+}
+.explorer p {
+  font-size: 18px;
+}
+.explorer button {
+  font-weight: bolder;
+  border-radius: 25px;
+  padding: 20px 30px;
+  margin-top: 25px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: 0.25ms;
+}
+.explorer button:hover {
+  box-shadow: 2px 2px 12px 4px grey;
+}
+
+/*colors*/
+/*fonts*/
+.fonctionnement h2 {
+  margin-left: 20px;
+}
+.fonctionnement li {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  position: relative;
+  transition: 0.25ms;
+}
+.fonctionnement li:hover {
+  transform: scale(1.04);
+}
+.fonctionnement i {
+  padding: 10px;
+}
+.fonctionnement p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.restaurant h2 {
+  margin-left: 20px;
+  padding-top: 40px;
+}
+.restaurant a {
+  width: 80%;
+  border-radius: 20px;
+}
+.restaurant .card {
+  width: 90%;
+  height: 251px;
+  margin: auto;
+  margin-bottom: 40px;
+  background-color: white;
+}
+.restaurant .cardcontent {
+  position: relative;
+  color: black;
+  margin-left: 10px;
+  line-height: 10px;
+}
+.restaurant .cardtext {
+  line-height: 8px;
+  margin-left: 15px;
+}
+.restaurant img {
+  width: 100%;
+  height: 160px;
+  border-radius: 20px 20px 0px 0px;
+}
+.restaurant .imagecontent {
+  position: relative;
+}
+.restaurant h4 {
+  color: #008766;
+  background-color: #99E2D0;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  padding: 10px;
+}
+.restaurant i {
+  font-size: x-large;
+  margin-right: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.restaurant .cardicon2 {
+  color: #9356DC;
+  opacity: 0;
+}
+.restaurant :hover .cardicon2 {
+  opacity: 1;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 15px;
+}
+footer h2 {
+  margin-left: 15px;
+  font-family: "Shrikhand", serif;
+}
+footer p {
+  margin-left: 15px;
+}
+footer .fa-utensils {
+  padding-right: 10px;
+}
+footer .fa-handshake-angle {
+  padding-right: 10px;
+  font-size: 12px;
+}
+footer a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

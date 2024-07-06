@@ -1,0 +1,42 @@
+@use"../utils/variables" as*;
+.fonctionnement {
+    & h2 {
+        margin-left: 20px;
+    }
+
+    & li {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        background-color: #F6F6F6;
+        box-shadow: 0px 4px 15px 0px #00000026;
+        position: relative;
+        transition: 0.250ms;
+
+    }
+
+    & li:hover {
+        transform: scale(1.04);
+    }
+
+    & i {
+        padding: 10px;
+    }
+
+    & p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary ;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        left: -15px;
+    }
+}

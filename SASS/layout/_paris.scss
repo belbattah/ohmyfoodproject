@@ -1,0 +1,19 @@
+
+.paris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 50px;
+    gap: 17px;
+     background-color: #EAEAEA;;
+    padding: 5px;
+    box-shadow: 0px 1px 3px 1px grey;
+    & i {
+        font-size: 20px;
+    }
+    & h2{
+        font-size: 16px;
+    }
+}
+
