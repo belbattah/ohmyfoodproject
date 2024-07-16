@@ -47,7 +47,6 @@ header h1 {
 }
 
 .explorer {
-  text-align: center;
   background-color: #F6F6F6;
   height: 300px;
   padding-top: 20px;
@@ -55,11 +54,15 @@ header h1 {
 .explorer h2 {
   font-size: 24px;
   margin-top: 0px;
+  text-align: center;
 }
 .explorer p {
   font-size: 18px;
+  text-align: center;
 }
-.explorer button {
+.explorer .btn {
+  display: block;
+  margin: auto;
   font-weight: bolder;
   border-radius: 25px;
   padding: 20px 30px;
@@ -69,7 +72,7 @@ header h1 {
   background-image: linear-gradient(#FF79DA, #9356DC);
   transition: 0.25ms;
 }
-.explorer button:hover {
+.explorer .btn:hover {
   box-shadow: 2px 2px 12px 4px grey;
 }
 
@@ -77,6 +80,19 @@ header h1 {
 /*fonts*/
 .fonctionnement h2 {
   margin-left: 20px;
+}
+@media (min-width: 480px) {
+  .fonctionnement h2 {
+    margin-left: 120px;
+  }
+}
+@media (min-width: 480px) {
+  .fonctionnement ul {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    gap: 30px;
+  }
 }
 .fonctionnement li {
   width: 80%;
@@ -119,9 +135,28 @@ header h1 {
   margin-left: 20px;
   padding-top: 40px;
 }
+@media (min-width: 480px) {
+  .restaurant h2 {
+    margin-left: 130px;
+  }
+}
+@media (min-width: 480px) {
+  .restaurant .cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+  }
+}
 .restaurant a {
   width: 80%;
   border-radius: 20px;
+}
+@media (min-width: 480px) {
+  .restaurant a {
+    width: 50%;
+  }
 }
 .restaurant .card {
   width: 90%;
@@ -164,10 +199,13 @@ header h1 {
   top: 10px;
 }
 .restaurant .cardicon2 {
-  color: #9356DC;
   opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.restaurant :hover .cardicon2 {
+.restaurant .cardicon2:hover {
   opacity: 1;
 }
 
@@ -192,6 +230,109 @@ footer .fa-handshake-angle {
 }
 footer a {
   color: white;
+}
+@media (min-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media (min-width: 480px) {
+  footer .footercontent {
+    display: flex;
+  }
+}
+
+@keyframes menu {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 15%;
+  }
+}
+.menuimage {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.pagemain {
+  background-color: #F6F6F6;
+}
+.pagemain h2 {
+  font-family: "Shrikhand", serif;
+  margin-left: 15px;
+}
+.pagemain .tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 50px;
+  margin-top: -25px;
+}
+.pagemain i {
+  font-size: x-large;
+  margin-right: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.pagemain .menucontent {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 25px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.pagemain .menu__description {
+  margin-left: 20px;
+  line-height: 5px;
+}
+.pagemain p {
+  font-size: 13px;
+}
+.pagemain .menu__price {
+  display: flex;
+  align-items: flex-end;
+  font-size: 15px;
+  margin-right: 15px;
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+.pagemain :hover .animation__price {
+  animation-name: menu;
+  animation-duration: 0.5s;
+  background-color: #9356DC;
+}
+.pagemain .btn {
+  display: block;
+  margin: auto;
+  font-weight: bolder;
+  border-radius: 25px;
+  padding: 20px 30px;
+  margin-top: 25px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: 0.25ms;
+  margin-bottom: 20px;
+}
+.pagemain .btn:hover {
+  box-shadow: 2px 2px 12px 4px grey;
+}
+
+@media (min-width: 480px) {
+  .fonctionement {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

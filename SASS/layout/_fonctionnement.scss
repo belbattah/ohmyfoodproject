@@ -1,10 +1,28 @@
 @use"../utils/variables" as*;
+
+
 .fonctionnement {
+  
+   
     & h2 {
+        @media(min-width:480px){
+            margin-left: 120px;
+        }
         margin-left: 20px;
     }
 
+    ul{
+        @media(min-width:480px){
+            width: 80%;
+            display: flex;
+           margin: auto;
+           gap: 30px;
+        }
+    }
+
     & li {
+
+        
         width: 80%;
         display: flex;
         align-items: center;
@@ -18,6 +36,8 @@
         transition: 0.250ms;
 
     }
+
+
 
     & li:hover {
         transform: scale(1.04);
@@ -39,4 +59,5 @@
         position: absolute;
         left: -15px;
     }
+
 }

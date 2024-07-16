@@ -1,17 +1,45 @@
 @use"../utils/variables" as*;
+
 .restaurant {
     background-color: #F6F6F6;
     width: 100%;
     padding-bottom: 20px;
+
    
-& h2{
-   margin-left: 20px;
-   padding-top: 40px;
-}
+  
+    & h2 {
+
+        @media(min-width:480px){
+            margin-left: 130px;
+        }
+      
+        margin-left: 20px;
+        padding-top: 40px;
+    }
+
+    .cards{
+
+        @media(min-width:480px){
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            
+            
+        }
+       
+    }
     & a {
+
+        @media(min-width:480px){
+            width: 50%;
+            
+        }
         width: 80%;
         border-radius: 20px;
     }
+
     .card {
         width: 90%;
         height: 251px;
@@ -20,31 +48,34 @@
         background-color: white;
     }
 
-    .cardcontent{
-       position: relative;
+    .cardcontent {
+        position: relative;
         color: black;
         margin-left: 10px;
         line-height: 10px;
     }
 
-    .cardtext{
+    .cardtext {
         line-height: 8px;
         margin-left: 15px;
-        
+
     }
-  
+
     & img {
         width: 100%;
         height: 160px;
-        border-radius: 20px 20px 0px 0px ;
-        
-        
-        
+        border-radius: 20px 20px 0px 0px;
+
+
+
     }
-    & .imagecontent{
+
+    & .imagecontent {
         position: relative;
+
     }
-    & h4{
+
+    & h4 {
         color: #008766;
         background-color: #99E2D0;
         position: absolute;
@@ -53,24 +84,27 @@
         padding: 10px;
     }
 
+
     & i {
         font-size: x-large;
         margin-right: 20px;
         position: absolute;
         right: 10px;
         top: 10px;
+
     }
-    & .cardicon2{
-color: $color-primary;
+    & .cardicon2 {
         opacity: 0;
-       
-
-       
-    }
-
-    & :hover .cardicon2{
+        color: transparent;
+        background-image: linear-gradient(#FF79DA, #9356DC) ;
+        background-clip: text;
+        -webkit-background-clip: text;
+       &:hover {
         opacity: 1;
+       }
     }
-
   
+ 
+
+
 }
