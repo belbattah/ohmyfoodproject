@@ -1,0 +1,40 @@
+
+.btn {
+    display: block;
+    margin: auto;
+     font-weight: bolder;
+     font-size: 16px;
+     border-radius: 25px;
+     padding: 20px 30px;
+     margin-top: 25px;
+     color: white;
+     border: none;
+     background-image: linear-gradient(#FF79DA, #9356DC) ;
+     transition: 0.250ms;
+ 
+ }
+ 
+ .btn:hover{
+     box-shadow: 2px 2px 12px 4px  grey;
+ }
+
+
+ .btn2 {
+    display: block;
+    margin: auto;
+     font-weight: bolder;
+     font-size: 16px;
+     border-radius: 25px;
+     padding: 15px 50px;
+     margin-top: 40px;
+     color: white;
+     border: none;
+     background-image: linear-gradient(#FF79DA, #9356DC) ;
+     transition: 0.250ms;
+     margin-bottom: 40px;
+ 
+ }
+ 
+ .btn2:hover{
+     box-shadow: 2px 2px 12px 4px  grey;
+ }

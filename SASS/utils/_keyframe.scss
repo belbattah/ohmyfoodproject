@@ -11,3 +11,34 @@ width:15%;
    }
 }
 
+
+
+
+@keyframes loader {
+   0%{
+      transform: translateY(-100%) ;
+      
+   }
+
+   50%{
+      transform: translateY(0%);
+   }
+
+   100%{
+      transform: translateY(-100%);
+      
+      
+   }
+}
+
+
+@keyframes disapear{
+   0%{
+      transform: scale(1);
+   }
+   100%{
+      transform: scale(0);
+   }
+}
+
+

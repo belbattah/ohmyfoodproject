@@ -1,0 +1,50 @@
+.restaurant{
+
+  
+    & i {
+
+        font-size: x-large;
+        margin-right: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    
+    }
+    & .cardicon2 {
+        opacity: 0;
+        color: transparent;
+        background-image: linear-gradient(#FF79DA, #9356DC) ;
+        background-clip: text;
+        -webkit-background-clip: text;
+       &:hover {
+        opacity: 1;
+       }
+    }
+}
+
+
+.heart2{
+   
+
+  
+        & i {
+    
+            font-size: x-large;
+            margin-right: 20px;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        
+        }
+        & .cardicon2 {
+            opacity: 0;
+            color: transparent;
+            background-image: linear-gradient(#FF79DA, #9356DC) ;
+            background-clip: text;
+            -webkit-background-clip: text;
+           &:hover {
+            opacity: 1;
+           }
+        }
+    }
+

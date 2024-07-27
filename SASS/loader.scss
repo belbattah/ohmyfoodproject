@@ -1,0 +1,74 @@
+@use"./utils/keyframe";
+@use"./utils/variables" as*;
+
+
+.loader{
+   background-color: beige;
+   opacity: 0.9;
+position: fixed;
+z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   transform-origin: bottom;
+   animation: disapear 200ms 2s forwards;
+   
+
+    & .animation {
+        display: flex;
+        margin-bottom: 10px;
+
+    }
+
+
+    & .ball {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        animation: loader 1s infinite ;
+        
+        
+    }
+
+    & .ball1 {
+        background-color: $color-primary;
+    }
+
+    & .ball2 {
+        background-color: $color-secondary;
+    }
+
+    & .ball3 {
+        background-color: $color-tertiare;
+    }
+
+
+    & .ball:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+
+    & .ball:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    & .ball:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    & .text {
+        font-size: 20px;
+        color: $color-primary;
+        font-weight: 900;
+       
+    }
+}
+
+
+
