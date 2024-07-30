@@ -1,3 +1,14 @@
+
+
+@keyframes heart{
+   0%{
+      transform: scale(1);
+   }
+
+   100%{
+      transform: scale(0);
+   }
+}
 @keyframes menu {
 
   from{
@@ -38,6 +49,16 @@ width:15%;
    }
    100%{
       transform: scale(0);
+   }
+}
+
+
+@keyframes scaling{
+   0%{
+      transform: scale(0);
+   }
+   100%{
+      transform: scale(1);
    }
 }
 

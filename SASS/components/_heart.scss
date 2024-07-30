@@ -8,6 +8,7 @@
         position: absolute;
         right: 10px;
         top: 10px;
+        
     
     }
     & .cardicon2 {
@@ -15,9 +16,13 @@
         color: transparent;
         background-image: linear-gradient(#FF79DA, #9356DC) ;
         background-clip: text;
-        -webkit-background-clip: text;
+        -webkit-background-clip: text; 
+        transition: all 200m ease-in-out;
+        
        &:hover {
         opacity: 1;
+        transform: scale(1.2 );
+        
        }
     }
 }

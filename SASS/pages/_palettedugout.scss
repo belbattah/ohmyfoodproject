@@ -76,6 +76,8 @@ header{
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+
+        
         & .menu-content {
             display: flex;
             background-color: white;
@@ -83,13 +85,29 @@ header{
             margin: auto;
             border-radius: 15px;
             padding-left: 10px;
-           
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             margin-top: 20px;
+            animation: scaling 2s;
+            
+            
             
         }
+        .delay1{
+            animation: scaling 2s 200ms;
+            
+        }
+        .delay2{
+            animation: scaling 2s 400ms;
+        }
+        .delay3{
+            animation: scaling 2s 600ms;
+        }
+        .delay4{
+            animation: scaling 2s 800ms;
+        }
+
         & .menu-description {
             line-height: 5px;
             padding: 5px;
