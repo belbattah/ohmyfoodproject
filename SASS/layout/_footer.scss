@@ -1,44 +1,48 @@
-footer{
+footer {
 
     background-color: #353535;
     color: white;
     padding: 15px;
 
- 
-& h2{
-    margin-left: 15px;
-    font-family: "Shrikhand", serif;
-}
-& p{
-    margin-left: 15px;
-}
-& .fa-utensils {
-    padding-right: 10px;
-}
-& .fa-handshake-angle {
-    padding-right: 10px;
-    font-size: 12px;
-}
-& a{
-    color: white;
-}
 
-@media(min-width:480px){
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 50px;
-    
-}
-.footercontent{
-    
-        @media(min-width:480px){
+    & h2 {
+        margin-left: 15px;
+        font-family: "Shrikhand", serif;
+    }
+
+    & p {
+        margin-left: 15px;
+    }
+
+    & .fa-utensils {
+        padding-right: 10px;
+    }
+
+    & .fa-handshake-angle {
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    & a {
+        color: white;
+    }
+
+    @media(min-width:480px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .footercontent {
+
+        @media(min-width:480px) {
             display: flex;
         }
-    
-    
-}
+
+
+    }
 
 
 }
-
